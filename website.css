@@ -1,0 +1,30 @@
+div.containerintro {
+  width:100;
+  /*border:1em solid green;*/
+  background-color: white;
+  display: flex; 
+  justify-content: center;
+  margin: 0 5% 0;
+  text-align: left;
+}
+
+div.intro {
+  box-sizing:border-box;
+  width:40%;
+  float:left;
+  /*margin-left: 150;*/
+  margin-right: 150px;
+}
+
+div.presentation {
+  box-sizing:border-box;
+  width:40%;
+  float:left;
+  text-align: left;
+  background-color: white;
+  /*margin-left: 150;*/
+  margin-right: 150px;
+  padding-left: 60px;
+  padding-right: 30px;
+  padding-bottom: 10px;
+}
