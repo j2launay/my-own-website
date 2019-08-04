@@ -22,7 +22,18 @@ div.presentation {
   float:left;
   text-align: left;
   background-color: white;
-  /*margin-left: 150;*/
+  margin-right: 150px;
+  padding-left: 60px;
+  padding-right: 30px;
+  padding-bottom: 10px;
+}
+
+div.education {
+  box-sizing:border-box;
+  width:40%;
+  float:bottom;
+  text-align: left;
+  background-color: red;
   margin-right: 150px;
   padding-left: 60px;
   padding-right: 30px;

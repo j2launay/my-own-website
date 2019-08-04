@@ -10,7 +10,7 @@ div.container {
   background-color: lightblue;*/
   display: flex; 
   justify-content: center;
-  margin: 0;
+  margin: 30px;
 }
 
 .img-circle{
@@ -33,7 +33,13 @@ div.split {
 div.splitright {
   box-sizing:border-box;
   width:25%;
-  border:5px silver ridge;
-  background-color: lightblue;
+  height: 50%;
+  background-color: white;
   float:right;
+  text-align: left;
+  margin-right: 50px;
+  padding-left: 20px;
+  padding-right: 30px;
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
