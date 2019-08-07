@@ -1,6 +1,53 @@
+body
+{
+	background-color : palegreen;
+	text-align: center
+
+}
+
+h2{
+	color: grey;
+}
+
+a{
+	color: green;
+}
+
+div.container {
+  width:100;
+  /*border:1em solid green;
+  background-color: lightblue;*/
+  display: flex; 
+  justify-content: center;
+  margin: 30px;
+}
+
+.img-circle{
+  box-sizing:border-box;
+  width:20%;
+  float:left;
+  border-radius: 50%;
+  margin: 1%;
+}
+
+.boxleft {
+	margin-left: 5%;
+    width: 60%;
+    display: inline-block;
+    vertical-align: top;
+    float: left;
+}
+
+.boxright {
+    margin-right: 5%;
+    width: 28%;
+    display: inline-block;
+    vertical-align: top;
+    float: right;
+}
+
 div.containerintro {
   width:100;
-  /*border:1em solid green;*/
   background-color: white;
   display: flex; 
   justify-content: center;
@@ -12,30 +59,125 @@ div.intro {
   box-sizing:border-box;
   width:40%;
   float:left;
-  /*margin-left: 150;*/
   margin-right: 150px;
 }
 
 div.presentation {
   box-sizing:border-box;
-  width:40%;
-  float:left;
+  float:center;
   text-align: left;
   background-color: white;
-  margin-right: 150px;
+  margin-right: 50px;
+  margin-bottom: 50px; 
+  padding-left: 60px;
+  padding-right: 30px;
+  padding-bottom: 10px;
+  font-family: Impact, "Arial Black", Arial, Verdana, sans-serif;
+}
+
+div.workexperience{
+  box-sizing:border-box;
+  float:center;
+  text-align: left;
+  background-color: white;
+  margin-right: 50px;
+  margin-bottom: 50px; 
   padding-left: 60px;
   padding-right: 30px;
   padding-bottom: 10px;
 }
 
-div.education {
+div.social{
   box-sizing:border-box;
-  width:40%;
-  float:bottom;
+  float:center;
   text-align: left;
-  background-color: red;
-  margin-right: 150px;
+  background-color: white;
+  margin-right: 50px;
+  margin-bottom: 50px; 
   padding-left: 60px;
   padding-right: 30px;
   padding-bottom: 10px;
+}
+
+div.publication{
+  box-sizing:border-box;
+  float:center;
+  text-align: left;
+  background-color: white;
+  margin-right: 50px;
+  margin-bottom: 50px; 
+  padding-left: 60px;
+  padding-right: 30px;
+  padding-bottom: 10px;
+}
+
+div.adresse {
+  box-sizing:border-box;
+  background-color: white;
+  float:center;
+  text-align: left;
+  margin-right: 50px;
+  margin-bottom: 50px; 
+  padding-left: 20px;
+  padding-right: 30px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+div.education {
+  box-sizing:border-box;
+  background-color: white;
+  float:center;
+  text-align: left;
+  margin-right: 50px;
+  margin-bottom: 50px; 
+  padding-left: 20px;
+  padding-right: 30px;
+  padding-bottom: 10px;
+}
+
+div.competences {
+  box-sizing:border-box;
+  background-color: white;
+  float:center;
+  text-align: left;
+  margin-right: 50px;
+  margin-bottom: 50px; 
+  padding-left: 40px;
+  padding-right: 30px;
+  padding-bottom: 10px;
+}
+
+div.languages {
+  box-sizing:border-box;
+  background-color: white;
+  float:center;
+  text-align: left;
+  margin-right: 50px;
+  margin-bottom: 50px; 
+  padding-left: 40px;
+  padding-right: 30px;
+  padding-bottom: 10px;
+}
+
+div.titre{
+  font-size: 110%;	
+}
+
+div.info{
+  font-size: 90%;
+  color: grey;	
+}
+
+div.lieu{
+  font-family: Luminari, fantasy;
+  color: grey;
+  font-size: 90%;
+}
+
+div.description{
+  padding-left: 20px;
+  padding-bottom: 20px;
+  font-family: Snell Roundhand, cursive;
+  font-size: 90%;
 }

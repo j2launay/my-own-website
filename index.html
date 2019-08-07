@@ -4,48 +4,81 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
 	<link rel="stylesheet" href="website.css">
-	<link rel="stylesheet" href="main.css">
+	<script src="website.js"></script> 
 <body>
-	 <!-- Navigation -->
-	<nav class="w3-bar w3-black">
-  		<a href="#home" class="w3-button w3-bar-item">Home</a>
-  		<a href="cv.html" class="w3-button w3-bar-item" >CV</a>
-  		<a href="funfact.html" class="w3-button w3-bar-item">Fun fact</a>
-  		<a href="contact.html" class="w3-button w3-bar-item">Contact</a>
-	</nav> 
-
-</br>
 	<div class="containerintro">
 		</br>
-		<img class="img-circle" src="am_ju.jpg" alt="Random Name" style="width:20%">	
-		<div class="intro"><h1>Julien DELAUNAY</h1> <h2>Master student in computer science </h2></div>
+		<img class="img-circle" src="am_ju.jpg" alt="Random Name" style="width:12%">	
+		<div class="intro"><h1>Julien DELAUNAY</h1> <h2>Master student in Computer Science </h2><div><a href="#workexperience">Work Experience</a>   <a href="social"> Social</a>  <a href="publication">  Publication</a></div></div>
 		</br>
 	</div>
 
 
 </br></br></br>
 	<div class="container">
-  		<div class="presentation">
-  			<h1> About Me </h1>
-  			Je suis étudiant en master 2 sciences informatique à l'université de Rennes 1. J'ai 22 ans et je rentre d'une année d'étude au Canada à Sherbrooke. J'ai effectué là-bas une année d'échange en maitrise informatique. Je souhaite maintenant poursuivre avec une <a href="aapg-anr-2019-Trame_proposition_detaillee.pdf">thèse</a> dans l'équipe LACODAM.</div>
-  		<div class="splitright">
-  			<img src="mail_logo.png" style="width:25px"> julien.delaunay.1@etudiant.univ-rennes1.fr </br>
-  			<img src="adresse_logo.png" style="width:25px"> Rennes France </br>
-  			<img src="lien_logo.jpg" style="width:25px"> http://localhost:8000/Documents/my-own-website/website.html </br>
-  		</div>
+		<div class="boxleft">
+  			<div class="presentation">
+  				<h1> About Me </h1>
+  				A sociable, meticulous student with excellent ability to multi-task and demonstrate great resistance to stress. Skills in the fields of finance, public relations and computer science. </br>
+  				I am a master 2 student in computer sciences at Rennes 1 university. I am 22 years old and I came back from a year of exchange in Sherbrooke, Canada. I am now looking for an internship for the end of my master and to poursue with a PhD thesis. </br>
+  			</div>
+  			<div id="workexperience" class="workexperience">
+  				<h1>Work experience</h1>
+  				<h2>2019</h2>
+  				<li>In charge of communication for the association of resident of Sherbrooke University. <a href="https://www.facebook.com/assoResidencesSherbrooke/">Agrus</a></li>
+  					<div class="description">I was in charge of the communication of an association with more than 500 adherent members. I create events, and share them on social networks. I took part of the organization for some events like the visit of a sugar shack or the winter carnaval in Québec.</div>
+  				<h2>2018</h2>
+  				<li> Internship in Lacodam team supervised by <a href="http://luisgalarraga.de/">Luis Galarraga</a> </li>
+  					<div class="description">At the end of my licence, I did an internship in a lab research team. This internship ended with the writing of an article concerning the mining of referring expressions. We are now waiting for this article to be published. It is currently reviewing at <a href="http://www.wsdm-conference.org/2020/"> WSDM 2020 conference.</a> This internship lasted four months. </div>
+  				<li>Vacataire <a href="https://www.leschampslibres.fr/">Champs libres</a></li>
+  					<div class="description">During my two years student job in this library, I was doing public service, organize the books and the reception of the users.</div>
+  			</div>
+  			<div id="social" class="social">
+  				<h1>Organization of a public event</h1>
+
+  				
+  				<p>I organize with a friend a public event to clean the Quai St Cyr in Rennes. This event was organized on facebook and more than two hundred people would like to participate. We had two article published in the Ouest France. </br> </p>
+  				<a href="https://www.ouest-france.fr/bretagne/rennes-35000/rennes-deux-etudiants-veulent-nettoyer-les-berges-de-la-vilaine-5248596?fbclid=IwAR3MtO5O8VRqShn4b2CWxD9RWL9AvS3ugfEOgvt6eftdMwkwsbI94OkEq2A">First article</a> <a href="https://www.ouest-france.fr/bretagne/ils-bravent-la-pluie-pour-nettoyer-les-berges-5255573"> Second article</a> 
+  			</div>
+  			<div id="publication" class="publication">
+  				<h1>Publication</h1>
+  				<p>During my internship I worked with Luis Galarraga and we are actually waiting for the WSDM conference to know if our article will be published.</p>
+  			</div>
+		</div>
+
+		<div class="boxright">
+			<div class="adresse">
+	 			<img src="mail_logo.png" style="width:25px"> julien.delaunay.1@etudiant.univ-rennes1.fr </br></br>
+ 				<img src="adresse_logo.png" style="width:25px"> Rennes, France </br></br>
+	  			<img src="lien_logo.png" style="width:25px"> <a href="https://julien-delaunay.netlify.com/">https://julien-delaunay.netlify.com/</a></br>
+	  		</div>		
+	  		<div class="education">
+	  			<h1>Education</h1>
+	  			<img src="logo_diplome.png" style="width:25px"> Research master's degree in computer science, <div class="lieu">University of Rennes 1, France, 2019-2020</div></br>
+				<img src="logo_diplome.png" style="width:25px"> Master's degree in computer science, <div class="lieu">University of Sherbrooke, Canada, 2018-2019</div> </br>
+	  			<img src="logo_diplome.png" style="width:25px"> University degree MIAGE informatics methods applied to business management, <div class="lieu">University of Rennes 1, France, 2015-2018</div></br>
+	  			<img src="logo_diplome.png" style="width:25px"> Scientific and european baccalaureate,<div class="lieu">High School St Martin, Rennes, France, 2012-2015</div></br>
+	  		</div>
+	  		<div class="competences">
+				<h1>My abilities</h1>
+				<li>Java</li>
+				<li>Python</li>
+				<li>Html, css, javascript, php</li>
+				<li>Android</li>
+				<li>Data bases</li> 
+			</div>
+	  		<div class="languages">
+				<h1>Languages</h1>
+				<li><div class="titre">French</div><div class="info">Native speaker</div></li>
+				<li><div class="titre">English</div><div class="info">Professional level</div></li>
+				<li><div class="titre">Spanish</div><div class="info">Basic skills</div></li>
+				<li><div class="titre">Chinese</div><div class="info">Beginner level</div></li>
+			</div>			
+		</div>
 	</div>
 	
-	<div class="container">
-		<div class="education">
-  			<h1>Education</h1>
-  		</div>
-  		<div class="splitright">
-  			<img src="mail_logo.png" style="width:25px"> julien.delaunay.1@etudiant.univ-rennes1.fr </br>
-  			<img src="adresse_logo.png" style="width:25px"> Rennes France </br>
-  			<img src="lien_logo.jpg" style="width:25px"> http://localhost:8000/Documents/my-own-website/website.html </br>
-  		</div>
-  	</div>
-	<p></p>
+
+
 	<img src="hotel-ny.png" alt="Random Name" style="width:50%">	
 	
 <!-- Content will go here -->
