@@ -125,7 +125,7 @@ div.adresse {
   padding-right: 20px;
   padding-bottom: 5px;
   padding-top: 5px;
-  font-size: 80%;
+  font-size: 70%;
 }
 
 div.education {
@@ -138,6 +138,7 @@ div.education {
   padding-left: 10px;
   padding-right: 20px;
   padding-bottom: 5px;
+  font-size: 80%;
 }
 
 div.competences {
@@ -169,7 +170,7 @@ div.titre{
 }
 
 div.info{
-  font-size: 70%;
+  font-size: 80%;
   color: grey;  
 }
 
@@ -180,12 +181,12 @@ img{
 div.lieu{
   font-family: Luminari, fantasy;
   color: grey;
-  font-size: 70%;
+  font-size: 85%;
 }
 
 div.description{
   padding-left: 10px;
   padding-bottom: 10px;
   font-family: Snell Roundhand, cursive;
-  font-size: 70%;
+  font-size: 80%;
 }
