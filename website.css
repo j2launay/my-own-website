@@ -85,6 +85,10 @@ div.workexperience{
   padding-bottom: 10px;
 }
 
+img{
+  width:25px;
+}
+
 div.social{
   box-sizing:border-box;
   float:center;
@@ -120,6 +124,7 @@ div.adresse {
   padding-right: 30px;
   padding-bottom: 10px;
   padding-top: 10px;
+  font-size: 80%;
 }
 
 div.education {

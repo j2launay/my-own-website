@@ -1,9 +1,8 @@
 body
 {
-  background-color : red;
+  background-color : palegreen;
   text-align: center;
-  font-size: 80%;
-  
+  font-size: 80%; 
 }
 
 h1{
@@ -126,6 +125,7 @@ div.adresse {
   padding-right: 20px;
   padding-bottom: 5px;
   padding-top: 5px;
+  font-size: 80%;
 }
 
 div.education {
@@ -171,6 +171,10 @@ div.titre{
 div.info{
   font-size: 70%;
   color: grey;  
+}
+
+div.image{
+  width: 18px;
 }
 
 div.lieu{
