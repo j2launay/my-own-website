@@ -1,23 +1,29 @@
 body
 {
-	background-color : palegreen;
-	text-align: center
+  background-color : palegreen;
+  text-align: center;
+  font-size: 60%;
+  color: red;
+}
 
+h1{
+  font-size: 140%;
 }
 
 h2{
-	color: grey;
+  color: grey;
+  font-size: 90%;
 }
 
 a{
-	color: green;
+  color: green;
 }
 
 div.container {
   width:100;
   display: flex; 
   justify-content: center;
-  margin: 30px;
+  margin: 15px;
 }
 
 .img-circle{
@@ -32,12 +38,12 @@ div.containerintro {
   background-color: white;
   display: flex; 
   justify-content: center;
-  margin: 0 5% 0;
+  margin: 0 2% 0;
   text-align: left;
 }
 
 .boxleft {
-	margin-left: 5%;
+  margin-left: 3%;
   width: 60%;
   display: inline-block;
   vertical-align: top;
@@ -45,7 +51,7 @@ div.containerintro {
 }
 
 .boxright {
-  margin-right: 5%;
+  margin-right: 3%;
   width: 28%;
   display: inline-block;
   vertical-align: top;
@@ -56,7 +62,7 @@ div.intro {
   box-sizing:border-box;
   width:40%;
   float:left;
-  margin-right: 150px;
+  margin-right: 70px;
 }
 
 div.presentation {
@@ -64,11 +70,11 @@ div.presentation {
   float:center;
   text-align: left;
   background-color: white;
-  margin-right: 50px;
-  margin-bottom: 50px; 
-  padding-left: 60px;
-  padding-right: 30px;
-  padding-bottom: 10px;
+  margin-right: 20px;
+  margin-bottom: 20px; 
+  padding-left: 30px;
+  padding-right: 15px;
+  padding-bottom: 5px;
   font-family: Impact, "Arial Black", Arial, Verdana, sans-serif;
 }
 
@@ -77,11 +83,11 @@ div.workexperience{
   float:center;
   text-align: left;
   background-color: white;
-  margin-right: 50px;
-  margin-bottom: 50px; 
-  padding-left: 60px;
-  padding-right: 30px;
-  padding-bottom: 10px;
+  margin-right: 20px;
+  margin-bottom: 20px; 
+  padding-left: 30px;
+  padding-right: 15px;
+  padding-bottom: 5px;
 }
 
 div.social{
@@ -89,11 +95,11 @@ div.social{
   float:center;
   text-align: left;
   background-color: white;
-  margin-right: 50px;
-  margin-bottom: 50px; 
-  padding-left: 60px;
-  padding-right: 30px;
-  padding-bottom: 10px;
+  margin-right: 20px;
+  margin-bottom: 20px; 
+  padding-left: 30px;
+  padding-right: 15px;
+  padding-bottom: 5px;
 }
 
 div.publication{
@@ -101,11 +107,11 @@ div.publication{
   float:center;
   text-align: left;
   background-color: white;
-  margin-right: 50px;
-  margin-bottom: 50px; 
-  padding-left: 60px;
-  padding-right: 30px;
-  padding-bottom: 10px;
+  margin-right: 20px;
+  margin-bottom: 20px; 
+  padding-left: 30px;
+  padding-right: 15px;
+  padding-bottom: 5px;
 }
 
 div.adresse {
@@ -113,12 +119,12 @@ div.adresse {
   background-color: white;
   float:center;
   text-align: left;
-  margin-right: 50px;
-  margin-bottom: 50px; 
-  padding-left: 20px;
-  padding-right: 30px;
-  padding-bottom: 10px;
-  padding-top: 10px;
+  margin-right: 20px;
+  margin-bottom: 20px; 
+  padding-left: 10px;
+  padding-right: 15px;
+  padding-bottom: 5px;
+  padding-top: 5px;
 }
 
 div.education {
@@ -126,11 +132,11 @@ div.education {
   background-color: white;
   float:center;
   text-align: left;
-  margin-right: 50px;
-  margin-bottom: 50px; 
-  padding-left: 20px;
-  padding-right: 30px;
-  padding-bottom: 10px;
+  margin-right: 20px;
+  margin-bottom: 20px; 
+  padding-left: 10px;
+  padding-right: 15px;
+  padding-bottom: 5px;
 }
 
 div.competences {
@@ -138,11 +144,11 @@ div.competences {
   background-color: white;
   float:center;
   text-align: left;
-  margin-right: 50px;
-  margin-bottom: 50px; 
-  padding-left: 40px;
-  padding-right: 30px;
-  padding-bottom: 10px;
+  margin-right: 20px;
+  margin-bottom: 20px; 
+  padding-left: 10px;
+  padding-right: 15px;
+  padding-bottom: 5px;
 }
 
 div.languages {
@@ -150,31 +156,31 @@ div.languages {
   background-color: white;
   float:center;
   text-align: left;
-  margin-right: 50px;
-  margin-bottom: 50px; 
-  padding-left: 40px;
-  padding-right: 30px;
-  padding-bottom: 10px;
+  margin-right: 20px;
+  margin-bottom: 20px; 
+  padding-left: 10px;
+  padding-right: 15px;
+  padding-bottom: 5px;
 }
 
 div.titre{
-  font-size: 110%;	
+  font-size: 75%;  
 }
 
 div.info{
-  font-size: 90%;
-  color: grey;	
+  font-size:60%;
+  color: grey;  
 }
 
 div.lieu{
   font-family: Luminari, fantasy;
   color: grey;
-  font-size: 90%;
+  font-size: 60%;
 }
 
 div.description{
-  padding-left: 20px;
-  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-bottom: 10px;
   font-family: Snell Roundhand, cursive;
-  font-size: 90%;
+  font-size: 60%;
 }
