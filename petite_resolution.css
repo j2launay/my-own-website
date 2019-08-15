@@ -29,7 +29,7 @@ div.container {
 .img-circle{
   box-sizing:border-box;
   float:left;
-  width: 8%;
+  width: 12%;
   border-radius: 50%;
   margin: 1%;
 }
