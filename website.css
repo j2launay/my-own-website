@@ -1,8 +1,8 @@
 body
 {
-	background-color : palegreen;
-	text-align: center
-
+	background-color : SlateGrey;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 
@@ -11,7 +11,7 @@ h2{
 }
 
 a{
-	color: green;
+	color: SlateGrey;
 }
 
 div.container {
@@ -31,7 +31,7 @@ div.container {
 
 div.containerintro {
   width:100;
-  background-color: white;
+  background-color: LightGrey;
   display: flex; 
   justify-content: center;
   margin: 0 5% 0;
@@ -55,30 +55,34 @@ div.containerintro {
 }
 
 div.intro {
+  background-color: LightGrey;
   box-sizing:border-box;
+  text-align: justify;
+  text-justify: inter-word;
   width:40%;
   float:left;
   margin-right: 150px;
 }
 
 div.presentation {
+  background-color: LightGrey;
+  text-align: justify;
+  text-justify: inter-word;
   box-sizing:border-box;
   float:center;
-  text-align: left;
-  background-color: white;
   margin-right: 50px;
   margin-bottom: 50px; 
   padding-left: 60px;
   padding-right: 30px;
   padding-bottom: 10px;
-  font-family: Impact, "Arial Black", Arial, Verdana, sans-serif;
 }
 
 div.workexperience{
+  background-color: LightGrey;
   box-sizing:border-box;
   float:center;
-  text-align: left;
-  background-color: white;
+  text-align: justify;
+  text-justify: inter-word;
   margin-right: 50px;
   margin-bottom: 50px; 
   padding-left: 60px;
@@ -91,10 +95,11 @@ img{
 }
 
 div.social{
+  background-color: LightGrey;
   box-sizing:border-box;
   float:center;
-  text-align: left;
-  background-color: white;
+  text-align: justify;
+  text-justify: inter-word; 
   margin-right: 50px;
   margin-bottom: 50px; 
   padding-left: 60px;
@@ -103,10 +108,11 @@ div.social{
 }
 
 div.publication{
+  background-color: LightGrey;
   box-sizing:border-box;
   float:center;
-  text-align: left;
-  background-color: white;
+  text-align: justify;
+  text-justify: inter-word;
   margin-right: 50px;
   margin-bottom: 50px; 
   padding-left: 60px;
@@ -115,8 +121,8 @@ div.publication{
 }
 
 div.adresse {
+  background-color: LightGrey;
   box-sizing:border-box;
-  background-color: white;
   float:center;
   text-align: left;
   margin-right: 50px;
@@ -129,8 +135,8 @@ div.adresse {
 }
 
 div.education {
+  background-color: LightGrey;
   box-sizing:border-box;
-  background-color: white;
   float:center;
   text-align: left;
   margin-right: 50px;
@@ -141,10 +147,11 @@ div.education {
 }
 
 div.competences {
+  background-color: LightGrey;
   box-sizing:border-box;
-  background-color: white;
   float:center;
-  text-align: left;
+  text-align: justify;
+  text-justify: inter-word;
   margin-right: 50px;
   margin-bottom: 50px; 
   padding-left: 40px;
@@ -153,10 +160,11 @@ div.competences {
 }
 
 div.languages {
+  background-color: LightGrey;
   box-sizing:border-box;
-  background-color: white;
   float:center;
-  text-align: left;
+  text-align: justify;
+  text-justify: inter-word;
   margin-right: 50px;
   margin-bottom: 50px; 
   padding-left: 40px;
@@ -182,6 +190,6 @@ div.lieu{
 div.description{
   padding-left: 20px;
   padding-bottom: 20px;
-  font-family: Snell Roundhand, cursive;
+  font-family: Luminari, fantasy;
   font-size: 90%;
 }

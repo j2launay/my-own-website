@@ -39,7 +39,7 @@ div.container {
 
 div.containerintro {
   width:70;
-  background-color: white;
+  background-color: LightGrey;
   display: flex; 
   justify-content: center;
   margin: 0 2% 0;
@@ -63,17 +63,21 @@ div.containerintro {
 }
 
 div.intro {
+  background-color: LightGrey;
   box-sizing:border-box;
+  text-align: justify;
+  text-justify: inter-word;
   width:40%;
   float:left;
   margin-right: 70px;
 }
 
 div.presentation {
+  background-color: LightGrey;
+  text-align: justify;
+  text-justify: inter-word;
   box-sizing:border-box;
   float:center;
-  text-align: left;
-  background-color: white;
   margin-right: 15px;
   margin-bottom: 15px; 
   padding-left: 20px;
@@ -83,10 +87,11 @@ div.presentation {
 }
 
 div.workexperience{
+  background-color: LightGrey;
   box-sizing:border-box;
   float:center;
-  text-align: left;
-  background-color: white;
+  text-align: justify;
+  text-justify: inter-word;
   margin-right: 15px;
   margin-bottom: 15px; 
   padding-left: 20px;
@@ -95,10 +100,11 @@ div.workexperience{
 }
 
 div.social{
+  background-color: LightGrey;
   box-sizing:border-box;
   float:center;
-  text-align: left;
-  background-color: white;
+  text-align: justify;
+  text-justify: inter-word; 
   margin-right: 15px;
   margin-bottom: 15px; 
   padding-left: 20px;
@@ -107,10 +113,11 @@ div.social{
 }
 
 div.publication{
+  background-color: LightGrey;
   box-sizing:border-box;
   float:center;
-  text-align: left;
-  background-color: white;
+  text-align: justify;
+  text-justify: inter-word;
   margin-right: 15px;
   margin-bottom: 15px; 
   padding-left: 20px;
@@ -119,8 +126,8 @@ div.publication{
 }
 
 div.adresse {
+  background-color: LightGrey;
   box-sizing:border-box;
-  background-color: white;
   float:center;
   text-align: left;
   margin-right: 20px;
@@ -133,8 +140,8 @@ div.adresse {
 }
 
 div.education {
+  background-color: LightGrey;
   box-sizing:border-box;
-  background-color: white;
   float:center;
   text-align: left;
   margin-right: 20px;
@@ -146,10 +153,11 @@ div.education {
 }
 
 div.competences {
+  background-color: LightGrey;
   box-sizing:border-box;
-  background-color: white;
   float:center;
-  text-align: left;
+  text-align: justify;
+  text-justify: inter-word;
   margin-right: 20px;
   margin-bottom: 20px; 
   padding-left: 5px;
@@ -158,10 +166,11 @@ div.competences {
 }
 
 div.languages {
+  background-color: LightGrey;
   box-sizing:border-box;
-  background-color: white;
   float:center;
-  text-align: left;
+  text-align: justify;
+  text-justify: inter-word;
   margin-right: 20px;
   margin-bottom: 20px; 
   padding-left: 5px;
@@ -191,6 +200,6 @@ div.lieu{
 div.description{
   padding-left: 10px;
   padding-bottom: 10px;
-  font-family: Snell Roundhand, cursive;
+  font-family: Luminari, fantasy;
   font-size: 65%;
 }
