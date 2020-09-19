@@ -15,6 +15,10 @@ h2{
   font-size: 120%;
 }
 
+h3{
+  font-size: 120%;
+}
+
 a{
   color: SlateGrey;
 }
@@ -29,7 +33,7 @@ div.container {
 .img-circle{
   box-sizing:border-box;
   float:left;
-  width: 12%;
+  width: 16%;
   border-radius: 50%;
   margin: 1%;
 }
@@ -80,7 +84,7 @@ div.presentation {
   padding-left: 40px;
   padding-right: 20px;
   padding-bottom: 5px;
-  font-family: Impact, "Arial Black", Arial, Verdana, sans-serif;
+  font-family: Arial, "Arial Black", Verdana, sans-serif;
 }
 
 div.workexperience{
@@ -189,7 +193,7 @@ img{
 }
 
 div.lieu{
-  font-family: Luminari, fantasy;
+  font-family: Arial, Helvetica;
   color: grey;
   font-size: 85%;
 }
@@ -197,6 +201,6 @@ div.lieu{
 div.description{
   padding-left: 10px;
   padding-bottom: 10px;
-  font-family: Luminari, fantasy;
+  font-family: Arial, Helvetica;
   font-size: 80%;
 }
