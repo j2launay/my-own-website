@@ -2,7 +2,7 @@ body
 {
   background-color : SlateGrey;
   text-align: justify;
-  text-justify: inter-word;
+  text-justify: auto;
   font-size: 60%;
 }
 
@@ -18,8 +18,19 @@ h2{
   margin-top: 0;
 }
 
-a{
+h2{
+  font-size: 90%;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+a:link{
+  text-decoration: none;
   color: SlateGrey;
+}
+
+a:visited {
+  color: green;
 }
 
 div.container {
@@ -32,8 +43,7 @@ div.container {
 .img-circle{
   box-sizing:border-box;
   float:left;
-  width: auto;
-  height: 5px;
+  width: 25;
   border-radius: 50%;
   margin: 1%;
 }
@@ -68,7 +78,7 @@ div.intro {
   box-sizing:border-box;
   text-align: justify;
   text-justify: inter-word;
-  width:40%;
+  width:60%;
   float:left;
   margin-right: 70px;
 }
@@ -91,8 +101,8 @@ div.workexperience{
   background-color: LightGrey;
   box-sizing:border-box;
   float:center;
-  text-align: justify;
-  text-justify: inter-word;
+  /*text-align: justify;
+  text-justify: inter-word;*/
   margin-right: 15px;
   margin-bottom: 15px; 
   padding-left: 20px;
@@ -164,6 +174,7 @@ div.competences {
   padding-left: 5px;
   padding-right: 10px;
   padding-bottom: 5px;
+  font-size: 90%;
 }
 
 div.languages {
@@ -189,7 +200,7 @@ div.info{
 }
 
 img{
-  width: 10px;
+  width: 25;
 }
 
 div.lieu{
