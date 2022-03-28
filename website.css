@@ -30,6 +30,12 @@ div.container {
   margin: 1%;
 }
 
+.img-article{
+  width:20%;
+  border-radius: 40%;
+  margin-right: 2%;
+}
+
 div.containerintro {
   width:100;
   background-color: LightGrey;
