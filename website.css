@@ -18,7 +18,7 @@ div.container {
   width:100;
   display: flex; 
   justify-content: center;
-  margin: 30px;
+  margin: 3px;
 }
 
 .img-circle{
@@ -47,7 +47,7 @@ div.containerintro {
 
 .boxleft {
 	margin-left: 5%;
-  width: 40%;
+  width: 55%;
   display: inline-block;
   vertical-align: top;
   float: left;
@@ -55,7 +55,7 @@ div.containerintro {
 
 .boxright {
   margin-right: 5%;
-  width: 22%;
+  width: 25%;
   display: inline-block;
   vertical-align: top;
   float: right;
@@ -164,6 +164,17 @@ div.competences {
   padding-left: 40px;
   padding-right: 30px;
   padding-bottom: 10px;
+  li li {
+    margin-top: 50px; /* Adjust the value to control the spacing between main categories and subcategories */
+    margin: 0px;
+    padding: 0;
+  }
+  li > ul {
+    margin-top: -5px !important;
+  }
+  li > ul > li {
+    margin-top: -3px !important;
+  }
 }
 
 div.languages {
