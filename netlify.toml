@@ -1,6 +1,6 @@
 [build]
   base = "/"
-  publish = "."
+  publish = "./"
 
 [[redirects]]
   from = "/*"
@@ -11,3 +11,8 @@
   for = "/*"
     [headers.values]
     Access-Control-Allow-Origin = "*"
+
+[[headers]]
+  for = "/css/*"
+    [headers.values]
+    Cache-Control = "public, max-age=31536000"
