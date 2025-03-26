@@ -1,5 +1,14 @@
 <!DOCTYPE html>
 <html>
+<head>
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-5J7NBH9S');</script>
+	<!-- End Google Tag Manager -->
+
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
@@ -8,12 +17,28 @@
 	<link rel="stylesheet" media="all and (max-device-width: 480px)" href="telephone_resolution.css">
 
 	<script src="website.js"></script> 
+	<style>
+		html {
+			scroll-behavior: smooth;
+		}
+	</style>
+</head>
 <body>
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5J7NBH9S" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
 	<div class="containerintro">
 		</br>
 		<img class="img-circle" src="me.jpeg" alt="Random Name">	
 		<div class="intro"><h1>Julien DELAUNAY</h1> <h2>PhD researcher in Computer Science </h2> <h3>Top Doctors, Barcelona</h3>
-			<div> <a href="#publication">  Publication</a> <a href="#workexperience">Work Experience</a>  <a href="#teaching"> Teaching</a> <a href="#social"> Personnal</a> </div></div>
+			<nav class="main-nav">
+				<a href="index.html" class="nav-link active">Home</a>
+				<a href="publications.html" class="nav-link">Publications</a>
+				<a href="#workexperience" class="nav-link">Work Experience</a>
+				<a href="#teaching" class="nav-link">Teaching</a>
+				<a href="#social" class="nav-link">Personal</a>
+			</nav>
+		</div>
 		</br>
 	</div>
 
@@ -50,115 +75,44 @@
 					  <a href="https://www.ouest-france.fr/bretagne/rennes-35000/rennes-deux-etudiants-veulent-nettoyer-les-berges-de-la-vilaine-5248596?fbclid=IwAR3MtO5O8VRqShn4b2CWxD9RWL9AvS3ugfEOgvt6eftdMwkwsbI94OkEq2A">First article</a> 
 					  <a href="https://www.ouest-france.fr/bretagne/ils-bravent-la-pluie-pour-nettoyer-les-berges-5255573"> Second article</a>
 				    </li>-->
-					December 2024: Proud to announce that my first research paper conducted entirely at Top Doctors, titled ``Predicting Diagnostics in Cardiology Using Large Language Models,'' has been published in a prestigious journal. This work focuses on leveraging LLMs to enhance diagnostic accuracy in cardiology.</br></br>
-					30th May 2024: I have presented ``The Impact of Explanation Techniques and Representations on User Understanding and Trust in Explainable AI'' during the <a href="">XAI4U event</a>, entirely dedicated to XAI for end-users. </br></br>
-					April 2024: Excited to share that my latest research paper, ``Does It Make Sense to Explain a Black Box With Another Black Box?'' has been officially published in the Revue TAL : Explicabilité des modèles de TAL. It proposed a comparison of two primary methodologies in identifying counterfactuals.</br></br>
-					March 2024: Thrilled to announce that since joining Top Doctors, I've been working diligently on implementing my expertise in generative AI, specifically focusing on NLP, to revolutionize healthcare services provided by chatbots.</br></br>
-					December 2023: I successfully defended my PhD on the 20th of December with a wonderful jury.</br></br>
-					October 2023: Exciting news, my PhD thesis has been submitted, and our research paper entitled ``'Honey, Tell Me What's Wrong', Global Explainability of NLP Models through Cooperative Generation.'' has been accepted for presentation at the prestigious BlackboxNLP 2023 workshop held during EMNLP.</br></br>
-				   	July 2023: I presented our paper "When Should We Use Linear Explanations?" during the french conference on machine learning (CAp) at Strasbourg. </br></br> 
-					April 2023: I presented our work about the adaptation of explanations to user profiles at <a href="https://hcxai.jimdosite.com/">HCXAI</a> workshop.
+					<b>March 2025:</b> I am excited to share that our paper, "Evaluating the Effectiveness of Large Language Models in Converting Clinical Data to FHIR Format," has been published in Applied Sciences MDPI. Read the full paper <a href="https://doi.org/10.3390/app15063379">here.</a><br><br>
+					<b>February 2025:</b> Delighted to announce the publication of our collaborative work with <a href="https://mlcommons.org/benchmarks/ailuminate/">MLCommons</a>, available on <a href="https://arxiv.org/abs/2503.05731">arXiv</a>. This benchmark is a significant step towards ensuring safer AI deployment by assessing the risk and reliability of LLMs across 12 critical hazard categories.<br><br>
+					<b>December 2024:</b> Proud to announce that my first research paper conducted entirely at Top Doctors, titled ``Predicting Diagnostics in Cardiology Using Large Language Models,'' has been published in a prestigious journal. This work focuses on leveraging LLMs to enhance diagnostic accuracy in cardiology.</br></br>
+					<b>30th May 2024:</b> I have presented ``The Impact of Explanation Techniques and Representations on User Understanding and Trust in Explainable AI'' during the <a href="">XAI4U event</a>, entirely dedicated to XAI for end-users. </br></br>
+					<b>April 2024:</b> Excited to share that my latest research paper, ``Does It Make Sense to Explain a Black Box With Another Black Box?'' has been officially published in the Revue TAL : Explicabilité des modèles de TAL. It proposed a comparison of two primary methodologies in identifying counterfactuals.</br></br>
+					<b>March 2024:</b> Thrilled to announce that since joining Top Doctors, I've been working diligently on implementing my expertise in generative AI, specifically focusing on NLP, to revolutionize healthcare services provided by chatbots.</br></br>
+					<b>December 2023:</b> I successfully defended my PhD on the 20th of December with a wonderful jury.</br></br>
+					<b>October 2023:</b> Exciting news, my PhD thesis has been submitted, and our research paper entitled ``'Honey, Tell Me What's Wrong', Global Explainability of NLP Models through Cooperative Generation.'' has been accepted for presentation at the prestigious BlackboxNLP 2023 workshop held during EMNLP.</br></br>
+					<b>July 2023:</b> I presented our paper "When Should We Use Linear Explanations?" during the french conference on machine learning (CAp) at Strasbourg. </br></br> 
+					<b>April 2023:</b> I presented our work about the adaptation of explanations to user profiles at <a href="https://hcxai.jimdosite.com/">HCXAI</a> workshop.
 			</div>
 			
 			<div id="publication" class="publication">
-				<h1>Publication</h1>
-				<img class="img-article" src="predict_diagnostic.png" style="float: left;">
+				<h1>Publications</h1>
+				<p>Check out my <a href="publications.html">complete list of publications</a> to learn more about my research work.</p>
+				
+				<!-- Keep only the most recent or most important publications here -->				
+				<img class="img-article" src="images/AIluminate.PNG" style="float: left;">
+				<strong>AILuminate: Introducing v1.0 of the AI Risk and Reliability Benchmark from MLCommons.</strong> 
+				<i>This work was a large collaborative effort involving numerous contributors from the MLCommons organization and the broader AI community</i>, 
+				Arxiv, 2025.
+				<a href="https://arxiv.org/abs/2503.05731">[Full Text]</a></br></br></br>
+
+				<img class="img-article" src="images/globalehr.png" style="float: left;">
+				<a href="https://julien-delaunay.netlify.app/">Julien Delaunay</a>, Daniel Girbes,
+				<a href="https://www.researchgate.net/profile/Jordi-Cusido">Jordi Cusido</a>
+				<strong>Evaluating the Effectiveness of Large Language Models in Converting Clinical Data to FHIR Format.</strong> 
+				<a href="https://www.mdpi.com/search?journal=applsci">Journal MDPI</a>: Applied Sciences, Basel, 2025.
+				<a href="https://www.mdpi.com/2076-3417/15/6/3379">[Full Text]</a> </br></br></br>
+
+				<img class="img-article" src="images/predict_diagnostic.png" style="float: left;">
 				<a href="https://julien-delaunay.netlify.app/">Julien Delaunay</a>, 
 				<a href="https://www.researchgate.net/profile/Jordi-Cusido">Jordi Cusido</a>
 				<strong>Evaluating the Performance of Large Language Models in Predicting Diagnostics for Spanish Clinical Cases in Cardiology.</strong> 
 				<a href="https://www.mdpi.com/search?journal=applsci">Journal MDPI</a>: Applied Sciences, Basel, 2024.
 				<a href="https://www.mdpi.com/2076-3417/15/1/61">[Full Text]</a>
-			  </br></br></br>
-
-				<img class="img-article" src="Growing_Language.png" style="float: left;">
-					<a href="https://julien-delaunay.netlify.app/">Julien Delaunay</a>, 
-					<a href="http://luisgalarraga.de/">Luis Galárraga</a>, 
-					<a href="http://people.irisa.fr/Christine.Largouet/">Christine largouët</a>
-					<strong>Does It Make Sense to Explain a Black Box With Another Black Box?</strong> 
-					<a href="https://tal-64-3.sciencesconf.org/">Revue TAL</a> : Explicabilité des modèles de TAL, 2024, France.
-					<a href="https://arxiv.org/abs/2404.14943">[English Version]</a> 
-					<a href="">[French Version]</a> 
-					<a href="">[Presentation]</a>
-					<a href="https://github.com/j2launay/ebbwbb">[Code]</a>
-				  </br></br></br>
-
-				<img class="img-article" src="Thesis plan 2.png" style="float: left;">
-					<a href="https://julien-delaunay.netlify.app/">Julien Delaunay</a>
-					<strong>Explainability for Machine Learning Models: From Data Adaptability to User Perception.</strong> 
-					PhD Thesis (INRIA 2023), Rennes.
-					<a href="https://theses.hal.science/tel-04462990v1/document">[Full Text]</a> 
-					<a href="soutenance.pdf">[Presentation]</a>.
-				  </br></br></br>
-
-				<img class="img-article" src="therapy.png" style="float: left;">
-					<a href="https://julien-delaunay.netlify.app/">Julien Delaunay</a>, 
-					<a href="https://antoine.chaffin.fr/">Antoine Chaffin</a> 
-					<strong>“Honey, Tell Me What's Wrong”, Global Explainability of NLP Models through Cooperative Generation</strong> 
-					Traitement Automatique du Langage Naturel (<a href="https://hcxai.jimdosite.com/">TALN 2023</a>), Paris.
-					<a href="https://coria-taln-2023.sciencesconf.org/461410/document">[Full Text]</a> 
-					<a href="https://antoine.chaffin.fr/images/slides/Therapy_2023_Slides.pdf">[Presentation]</a>
-					<a href="https://github.com/NohTow/therapy">[Code]</a>.
-				  </br></br></br>
-
-				<img class="img-article" src="user studies.png" style="float: left;">
-					<a href="https://julien-delaunay.netlify.app/">Julien Delaunay</a>, 
-					<a href="http://luisgalarraga.de/">Luis Galárraga</a>, 
-					<a href="http://people.irisa.fr/Christine.Largouet/">Christine largouët</a>, 
-					<a href="https://www.nielsvanberkel.com/">Niels van Berkel</a> 
-					<strong>Adaptation of AI Explanations to Users' Roles.</strong> 
-					Human-Centered Explainable AI (<a href="https://hcxai.jimdosite.com/">HCXAI 2023</a>) CHI workshop, Hamburg.
-					<a href="https://nielsvanberkel.com/files/publications/chi2023f.pdf">[Preprint]</a> 
-					<a href="https://youtu.be/f8EswN2mW_g?t=1304">[Video]</a>.
-				  </br></br></br>
-				
-				<img class="img-article" src="chat_gpt.png" style="float: left;">
-					<a href="https://www.joelwester.com/">Joel Wester</a>,
-					<a href="https://julien-delaunay.netlify.app/">Julien Delaunay</a>, 
-					Sander de Jong,
-					<a href="https://www.nielsvanberkel.com/">Niels van Berkel</a> 
-					<strong>On Moral Manifestations in Large Language Models.</strong> 
-					Moral Agents for Sustainable Transitions (<a href="https://hcxai.jimdosite.com/">CHI workshop 2023</a>), Hamburg.
-					<a href="https://nielsvanberkel.com/files/publications/chi2023e.pdf">[Preprint]</a>.
-				  </br></br></br>
-				
-				<img class="img-article" src="ape.png" style="float: left;">
-					<a href="https://julien-delaunay.netlify.app/">Julien Delaunay</a>, 
-					<a href="http://luisgalarraga.de/">Luis Galárraga</a>, 
-					<a href="http://people.irisa.fr/Christine.Largouet/">Christine largouët</a> 
-					<strong>When Should We Use Linear Explanations?</strong> 
-					Conference on Information and Knowledge Management (<a href="https://www.cikm2022.org/">CIKM 2022</a>), Atlanta.
-					<a href="https://dl.acm.org/doi/abs/10.1145/3511808.3557489">[Full text]</a>
-					<a href="https://dl.acm.org/doi/abs/10.1145/3511808.3557489">[Video]</a>
-					<a href="https://github.com/j2launay/APE">[Code]</a>.
-				  </br></br></br>
-			  
-			  <img class="img-article" src="slime.png" style="float: left;">
-				<a href="https://sites.google.com/site/romaricgaudel/">Romaric Gaudel</a>, <a href="http://luisgalarraga.de/">Luis  Galárraga</a>, 
-				  <a href="https://julien-delaunay.netlify.app/">Julien Delaunay</a>, 
-				  Laurence Rozé, Vaishnavi Bhargava. <strong>s-LIME: Reconciling Locality and Fidelity in Linear Explanations.</strong> 
-				  Intelligent Data Analysis (<a href="https://ida-2022.org/">IDA 2022</a>), Rennes.
-				  <a href="https://www.semanticscholar.org/paper/s-LIME%3A-Reconciling-Locality-and-Fidelity-in-Linear-Gaudel-Gal%C3%A1rraga/42d423d0d82bd6a2428904ff1a715a0f93b1ce30">[Full text]</a>. 
-				</br></br></br>
-				
-				<img class="img-article" src="improving anchor.png" style="float: left;">
-				  <a href="https://julien-delaunay.netlify.app/">Julien Delaunay</a>, <a href="http://luisgalarraga.de/">Luis Galárraga</a>, 
-					  <a href="http://people.irisa.fr/Christine.Largouet/">Christine largouët</a> <strong>Improving Anchor-based Explanations.</strong> 
-					  Conference on Information and Knowledge Management (<a href="https://www.cikm2020.org/">CIKM 2020</a>), Galway.  
-					  <a href="http://luisgalarraga.de/docs/cikm2020.pdf">[Preprint]</a>
-					  <a href="https://dl.acm.org/doi/10.1145/3340531.3417461">[Video]</a>
-					  <a href=" https://github.com/j2launay/anchors">[Code]</a>.
-					</br></br></br>
-					  
-				  <img class="img-article" src="remi.png" style="float: left;">
-				  <a href="http://luisgalarraga.de/publications/">Luis Galárraga</a>, <a href="https://julien-delaunay.netlify.app/">Julien Delaunay</a>,
-				   <a href="https://perso.telecom-paristech.fr/jld/">Jean-Louis Dessalles</a>. 
-				  <strong>REMI: Mining Intuitive Referring Expressions.</strong> International Conference on Extending Database Technology 
-				  (<a href="https://diku-dk.github.io/edbticdt2020/">EDBT/ICDT 2020</a>), Copenhagen. <a href="https://arxiv.org/pdf/1911.01157.pdf">[Technical report]</a>
-				   <a href="https://openproceedings.org/2020/conf/edbt/paper_238.pdf">[Full text]</a> 
-				   <a href="https://www.dropbox.com/s/kle6fx57w6ai1uz/8_GalarragaDelaunayDessalles.mp4.mp4?dl=0">[Video]</a> 
-				   <a href=" https://gitlab.inria.fr/lgalarra/remi">[Code]</a>.
-		  </div>
-
+			</div>
+			
   			<div id="workexperience" class="workexperience">
 				<h1>Work experience</h1>
 				<h2>2024 - </h2>
@@ -260,18 +214,18 @@
 
 		<div class="boxright">
 			<div class="adresse">
-	 			<img src="mail_logo.png"> jdelaunay@topdoctors.es </br></br>
- 				<img src="adresse_logo.png"> Barcelona, Spain </br></br>
-				<img src="logo_git.png"> <a href="https://github.com/j2launay">https://github.com/j2launay</a></br></br>
-				<img src="lien_logo.png"> <a href="https://julien-delaunay.netlify.app/">https://julien-delaunay.netlify.app/</a></br>
+	 			<img src="images/mail_logo.png"> jdelaunay@topdoctors.es </br></br>
+ 				<img src="images/adresse_logo.png"> Barcelona, Spain </br></br>
+				<img src="images/logo_git.png"> <a href="https://github.com/j2launay">https://github.com/j2launay</a></br></br>
+				<img src="images/lien_logo.png"> <a href="https://julien-delaunay.netlify.app/">https://julien-delaunay.netlify.app/</a></br>
 	  		</div>		
 	  		<div class="education">
 	  			<h1>Education</h1>
-	  			<img src="logo_diplome.png"> PhD student in computer science, <div class="lieu">University of Rennes 1, France, 2020-</div></br>
-	  			<img src="logo_diplome.png"> Research master's degree in computer science, <div class="lieu">University of Rennes 1, France, 2019-2020</div></br>
-				<img src="logo_diplome.png"> Master's degree in computer science, <div class="lieu">University of Sherbrooke, Canada, 2018-2019</div> </br>
-	  			<img src="logo_diplome.png"> University degree MIAGE informatics methods applied to business management, <div class="lieu">University of Rennes 1, France, 2015-2018</div></br>
-	  			<img src="logo_diplome.png"> Scientific and european baccalaureate,<div class="lieu">High School St Martin, Rennes, France, 2012-2015</div></br>
+	  			<img src="images/logo_diplome.png"> PhD student in computer science, <div class="lieu">University of Rennes 1, France, 2020-</div></br>
+	  			<img src="images/logo_diplome.png"> Research master's degree in computer science, <div class="lieu">University of Rennes 1, France, 2019-2020</div></br>
+				<img src="images/logo_diplome.png"> Master's degree in computer science, <div class="lieu">University of Sherbrooke, Canada, 2018-2019</div> </br>
+	  			<img src="images/logo_diplome.png"> University degree MIAGE informatics methods applied to business management, <div class="lieu">University of Rennes 1, France, 2015-2018</div></br>
+	  			<img src="images/logo_diplome.png"> Scientific and european baccalaureate,<div class="lieu">High School St Martin, Rennes, France, 2012-2015</div></br>
 	  		</div>
 	  		<div class="competences">
 				<h1>Technical skills</h1>
@@ -309,14 +263,14 @@
 			</div>
 	  		<div class="languages">
 				<h1>Languages</h1>
-				<img src="france.png"> French<div class="info">Native speaker</div></li>
-				<img src="england.png"> English<div class="info">Professional level</div></li>
-				<img src="spain.png"> Spanish<div class="info">Professional level</div></li>
-				<img src="china.png"> Chinese<div class="info">Beginner level</div></li>
+				<img src="images/france.png"> French<div class="info">Native speaker</div></li>
+				<img src="images/england.png"> English<div class="info">Professional level</div></li>
+				<img src="images/spain.png"> Spanish<div class="info">Professional level</div></li>
+				<img src="images/china.png"> Chinese<div class="info">Beginner level</div></li>
 			</div>
 			<div class="education">
 				<h1>Supervision</h1>
-				<img src="encadrement.png"> 2020<div class="lieu">Mentoring of Jacques Lacourt, a final year trainee at <a href="https://www.centrale-marseille.fr/en">Centrale Marseille.</a></div></li>
+				<img src="images/encadrement.png"> 2020<div class="lieu">Mentoring of Jacques Lacourt, a final year trainee at <a href="https://www.centrale-marseille.fr/en">Centrale Marseille.</a></div></li>
 			</div>
 			<div class="languages">
 				<h1>Organisation member</h1>
@@ -340,5 +294,29 @@
  		</p>
 	</footer>
 
+	<script>
+		// Highlight active section while scrolling
+		document.addEventListener('DOMContentLoaded', function() {
+			const sections = document.querySelectorAll('div[id]');
+			const navLinks = document.querySelectorAll('.nav-link');
+			
+			window.addEventListener('scroll', () => {
+				let current = '';
+				sections.forEach(section => {
+					const sectionTop = section.offsetTop;
+					if (pageYOffset >= sectionTop - 60) {
+						current = section.getAttribute('id');
+					}
+				});
+
+				navLinks.forEach(link => {
+					link.classList.remove('active');
+					if (link.getAttribute('href').slice(1) === current) {
+						link.classList.add('active');
+					}
+				});
+			});
+		});
+	</script>
 </body>
 </html>

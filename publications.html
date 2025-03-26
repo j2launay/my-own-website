@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Julien Delaunay - Publications</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+    <link rel="stylesheet" href="website.css">
+    <link rel="stylesheet" media="screen and (max-width: 1280px)" href="petite_resolution.css">
+    <link rel="stylesheet" media="all and (max-device-width: 480px)" href="telephone_resolution.css">
+    <style>
+        .publication-filters {
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .filter-btn {
+            margin: 0.5rem;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 4px;
+            background: #f5f5f5;
+            cursor: pointer;
+        }
+
+        .filter-btn.active {
+            background: #3498db;
+            color: white;
+        }
+
+        .publication-item {
+            display: block;
+            /* Change from flex to block */
+            width: 100%;
+            margin-bottom: 5rem;
+            /* Augmente l'espacement */
+        }
+
+        .publication-content {
+            display: block;
+        }
+
+        /* Garde l'effet de survol pour montrer que c'est cliquable */
+        .venue a:hover,
+        .authors a:hover {
+            color: #3498db;
+        }
+
+        #publication.publication {
+            margin-left: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="containerintro">
+        <br />
+        <img class="img-circle" src="me.jpeg" alt="Random Name">
+        <div class="intro">
+            <h1>Julien DELAUNAY</h1>
+            <h2>PhD researcher in Computer Science</h2>
+            <h3>Top Doctors, Barcelona</h3>
+            <nav class="main-nav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="publications.html" class="nav-link active">Publications</a>
+                <a href="index.html#workexperience" class="nav-link">Work Experience</a>
+                <a href="index.html#teaching" class="nav-link">Teaching</a>
+                <a href="index.html#social" class="nav-link">Personal</a>
+            </nav>
+        </div>
+        <br />
+    </div>
+
+    <div class="container">
+        <div class="publication-list">
+            <div class="publication-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="journal">Journal Papers</button>
+                <button class="filter-btn" data-filter="conference">Conference Papers</button>
+                <button class="filter-btn" data-filter="workshop">Workshop Papers</button>
+                <button class="filter-btn" data-filter="preprint">Preprint</button>
+                <button class="filter-btn" data-filter="thesis">Thesis</button>
+            </div>
+            <div id="publication" class="publication">
+                <!-- Preprint -->
+                <div class="publication-item" data-type="preprint">
+                    <div style="display: flex; align-items: flex-start;">
+                        <img class="img-article" src="images/AIluminate.PNG" style="margin-right: 2rem;">
+                        <div class="publication-content">
+                            <h3 style="margin-top: 0;">AILuminate: Introducing v1.0 of the AI Risk and Reliability Benchmark from MLCommons.</h3>
+                            <p class="authors" style="margin: 0.5rem 0;">
+                                <i>This work was a large collaborative effort involving numerous contributors from the MLCommons organization and the broader AI community</i>
+                            </p>
+                            <p class="venue">Arxiv, 2025: </p>
+                            <div class="publication-links">
+                                <a href="https://arxiv.org/abs/2503.05731" class="btn">Full Text</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Journal Papers -->
+                <div class="publication-item" data-type="journal">
+                    <div style="display: flex; align-items: flex-start;">
+                        <img class="img-article" src="images/globalehr.png" style="margin-right: 2rem;">
+                        <div class="publication-content">
+                            <h3 style="margin-top: 0;">Evaluating the Effectiveness of Large Language Models in Converting Clinical Data to FHIR Format.</h3>
+                            <p class="authors" style="margin: 0.5rem 0;">
+                                <a href="https://julien-delaunay.netlify.app/">Julien Delaunay</a>, Daniel Girbes,
+				                <a href="https://www.researchgate.net/profile/Jordi-Cusido">Jordi Cusido</a>
+                            </p>
+                            <p class="venue"><a href="https://www.mdpi.com/search?journal=applsci">Journal MDPI</a>:
+                                Applied Sciences, Basel, 2025</p>
+                            <div class="publication-links">
+                                <a href="https://www.mdpi.com/2076-3417/15/6/3379" class="btn">Full Text</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+				        
+                <div class="publication-item" data-type="journal">
+                    <div style="display: flex; align-items: flex-start;">
+                        <img class="img-article" src="images/predict_diagnostic.png" style="margin-right: 2rem;">
+                        <div class="publication-content">
+                            <h3 style="margin-top: 0;">Evaluating the Performance of Large Language Models in Predicting Diagnostics for Spanish Clinical Cases in Cardiology</h3>
+                            <p class="authors" style="margin: 0.5rem 0;">
+                                <a href="https://julien-delaunay.netlify.app/">Julien Delaunay</a>,
+                                <a href="https://www.researchgate.net/profile/Jordi-Cusido">Jordi Cusido</a>
+                            </p>
+                            <p class="venue"><a href="https://www.mdpi.com/search?journal=applsci">Journal MDPI</a>:
+                                Applied Sciences, Basel, 2024</p>
+                            <div class="publication-links">
+                                <a href="https://www.mdpi.com/2076-3417/15/1/61" class="btn">Full Text</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="publication-item" data-type="journal">
+                    <div style="display: flex; align-items: flex-start;">
+                        <img class="img-article" src="images/Growing_Language.png" style="margin-right: 2rem;">
+                        <div class="publication-content">
+                            <h3 style="margin-top: 0;">Does It Make Sense to Explain a Black Box With Another Black Box?
+                            </h3>
+                            <p class="authors" style="margin: 0.5rem 0;">
+                                <a href="https://julien-delaunay.netlify.app/">Julien Delaunay</a>,
+                                <a href="http://luisgalarraga.de/">Luis Galárraga</a>,
+                                <a href="http://people.irisa.fr/Christine.Largouet/">Christine largouët</a>
+                            </p>
+                            <p class="venue"><a href="https://tal-64-3.sciencesconf.org/">Revue TAL</a>: Explicabilité
+                                des modèles de TAL, 2024, France</p>
+                            <div class="publication-links">
+                                <a href="https://arxiv.org/abs/2404.14943" class="btn">English Version</a>
+                                <a href="" class="btn">French Version</a>
+                                <a href="" class="btn">Presentation</a>
+                                <a href="https://github.com/j2launay/ebbwbb" class="btn">Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Thesis -->
+                <div class="publication-item" data-type="thesis">
+                    <div style="display: flex; align-items: flex-start;">
+                        <img class="img-article" src="images/Thesis plan 2.png" style="margin-right: 2rem;">
+                        <div class="publication-content">
+                            <h3 style="margin-top: 0;">Explainability for Machine Learning Models: From Data
+                                Adaptability to User Perception</h3>
+                            <p class="authors" style="margin: 0.5rem 0;">
+                                <a href="https://julien-delaunay.netlify.app/">Julien Delaunay</a>
+                            </p>
+                            <p class="venue">PhD Thesis (INRIA 2023), Rennes</p>
+                            <div class="publication-links">
+                                <a href="https://theses.hal.science/tel-04462990v1/document" class="btn">Full Text</a>
+                                <a href="soutenance.pdf" class="btn">Presentation</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Conference Papers -->
+                <div class="publication-item" data-type="conference">
+                    <div style="display: flex; align-items: flex-start;">
+                        <img class="img-article" src="images/ape.png" style="margin-right: 2rem;">
+                        <div class="publication-content">
+                            <h3 style="margin-top: 0;">When Should We Use Linear Explanations?</h3>
+                            <p class="authors" style="margin: 0.5rem 0;">
+                                <a href="https://julien-delaunay.netlify.app/">Julien Delaunay</a>,
+                                <a href="http://luisgalarraga.de/">Luis Galárraga</a>,
+                                <a href="http://people.irisa.fr/Christine.Largouet/">Christine largouët</a>
+                            </p>
+                            <p class="venue">Conference on Information and Knowledge Management (CIKM 2022)</p>
+                            <div class="publication-links">
+                                <a href="https://dl.acm.org/doi/abs/10.1145/3511808.3557489" class="btn">Full Text</a>
+                                <a href="https://dl.acm.org/doi/abs/10.1145/3511808.3557489" class="btn">Video</a>
+                                <a href="https://github.com/j2launay/APE" class="btn">Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="publication-item" data-type="conference">
+                    <div style="display: flex; align-items: flex-start;">
+                        <img class="img-article" src="images/therapy.png" style="margin-right: 2rem;">
+                        <div class="publication-content">
+                            <h3 style="margin-top: 0;">"Honey, Tell Me What's Wrong", Global Explainability of NLP
+                                Models through Cooperative Generation</h3>
+                            <p class="authors" style="margin: 0.5rem 0;">
+                                <a href="https://julien-delaunay.netlify.app/">Julien Delaunay</a>,
+                                <a href="https://antoine.chaffin.fr/">Antoine Chaffin</a>
+                            </p>
+                            <p class="venue">Traitement Automatique du Langage Naturel (<a
+                                    href="https://hcxai.jimdosite.com/">TALN 2023</a>), Paris</p>
+                            <div class="publication-links">
+                                <a href="https://coria-taln-2023.sciencesconf.org/461410/document" class="btn">Full
+                                    Text</a>
+                                <a href="https://antoine.chaffin.fr/images/slides/Therapy_2023_Slides.pdf"
+                                    class="btn">Presentation</a>
+                                <a href="https://github.com/NohTow/therapy" class="btn">Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Workshop Papers -->
+                <div class="publication-item" data-type="workshop">
+                    <div style="display: flex; align-items: flex-start;">
+                        <img class="img-article" src="images/user studies.png" style="margin-right: 2rem;">
+                        <div class="publication-content">
+                            <h3 style="margin-top: 0;">Adaptation of AI Explanations to Users' Roles</h3>
+                            <p class="authors" style="margin: 0.5rem 0;">
+                                <a href="https://julien-delaunay.netlify.app/">Julien Delaunay</a>,
+                                <a href="http://luisgalarraga.de/">Luis Galárraga</a>,
+                                <a href="http://people.irisa.fr/Christine.Largouet/">Christine largouët</a>,
+                                <a href="https://www.nielsvanberkel.com/">Niels van Berkel</a>
+                            </p>
+                            <p class="venue">Human-Centered Explainable AI (<a href="https://hcxai.jimdosite.com/">HCXAI
+                                    2023</a>) CHI workshop, Hamburg</p>
+                            <div class="publication-links">
+                                <a href="https://nielsvanberkel.com/files/publications/chi2023f.pdf"
+                                    class="btn">Preprint</a>
+                                <a href="https://youtu.be/f8EswN2mW_g?t=1304" class="btn">Video</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Workshop Papers continued -->
+                <div class="publication-item" data-type="workshop">
+                    <div style="display: flex; align-items: flex-start;">
+                        <img class="img-article" src="images/chat_gpt.png" style="margin-right: 2rem;">
+                        <div class="publication-content">
+                            <h3 style="margin-top: 0;">On Moral Manifestations in Large Language Models</h3>
+                            <p class="authors" style="margin: 0.5rem 0;">
+                                <a href="https://www.joelwester.com/">Joel Wester</a>,
+                                <a href="https://julien-delaunay.netlify.app/">Julien Delaunay</a>,
+                                Sander de Jong,
+                                <a href="https://www.nielsvanberkel.com/">Niels van Berkel</a>
+                            </p>
+                            <p class="venue">Moral Agents for Sustainable Transitions (<a
+                                    href="https://hcxai.jimdosite.com/">CHI workshop 2023</a>), Hamburg</p>
+                            <div class="publication-links">
+                                <a href="https://nielsvanberkel.com/files/publications/chi2023e.pdf"
+                                    class="btn">Preprint</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Conference Papers continued -->
+                <div class="publication-item" data-type="conference">
+                    <div style="display: flex; align-items: flex-start;">
+                        <img class="img-article" src="images/slime.png" style="margin-right: 2rem;">
+                        <div class="publication-content">
+                            <h3 style="margin-top: 0;">s-LIME: Reconciling Locality and Fidelity in Linear Explanations
+                            </h3>
+                            <p class="authors" style="margin: 0.5rem 0;">
+                                <a href="https://sites.google.com/site/romaricgaudel/">Romaric Gaudel</a>,
+                                <a href="http://luisgalarraga.de/">Luis Galárraga</a>,
+                                <a href="https://julien-delaunay.netlify.app/">Julien Delaunay</a>,
+                                Laurence Rozé, Vaishnavi Bhargava
+                            </p>
+                            <p class="venue">Intelligent Data Analysis (<a href="https://ida-2022.org/">IDA 2022</a>),
+                                Rennes</p>
+                            <div class="publication-links">
+                                <a href="https://www.semanticscholar.org/paper/s-LIME%3A-Reconciling-Locality-and-Fidelity-in-Linear-Gaudel-Gal%C3%A1rraga/42d423d0d82bd6a2428904ff1a715a0f93b1ce30"
+                                    class="btn">Full text</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="publication-item" data-type="conference">
+                    <div style="display: flex; align-items: flex-start;">
+                        <img class="img-article" src="images/improving anchor.png" style="margin-right: 2rem;">
+                        <div class="publication-content">
+                            <h3 style="margin-top: 0;">Improving Anchor-based Explanations</h3>
+                            <p class="authors" style="margin: 0.5rem 0;">
+                                <a href="https://julien-delaunay.netlify.app/">Julien Delaunay</a>,
+                                <a href="http://luisgalarraga.de/">Luis Galárraga</a>,
+                                <a href="http://people.irisa.fr/Christine.Largouet/">Christine largouët</a>
+                            </p>
+                            <p class="venue">Conference on Information and Knowledge Management (<a
+                                    href="https://www.cikm2020.org/">CIKM 2020</a>), Galway</p>
+                            <div class="publication-links">
+                                <a href="http://luisgalarraga.de/docs/cikm2020.pdf" class="btn">Preprint</a>
+                                <a href="https://dl.acm.org/doi/10.1145/3340531.3417461" class="btn">Video</a>
+                                <a href="https://github.com/j2launay/anchors" class="btn">Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="publication-item" data-type="conference">
+                    <div style="display: flex; align-items: flex-start;">
+                        <img class="img-article" src="images/remi.png" style="margin-right: 2rem;">
+                        <div class="publication-content">
+                            <h3 style="margin-top: 0;">REMI: Mining Intuitive Referring Expressions</h3>
+                            <p class="authors" style="margin: 0.5rem 0;">
+                                <a href="http://luisgalarraga.de/publications/">Luis Galárraga</a>,
+                                <a href="https://julien-delaunay.netlify.app/">Julien Delaunay</a>,
+                                <a href="https://perso.telecom-paristech.fr/jld/">Jean-Louis Dessalles</a>
+                            </p>
+                            <p class="venue">International Conference on Extending Database Technology (<a
+                                    href="https://diku-dk.github.io/edbticdt2020/">EDBT/ICDT 2020</a>), Copenhagen</p>
+                            <div class="publication-links">
+                                <a href="https://arxiv.org/pdf/1911.01157.pdf" class="btn">Technical report</a>
+                                <a href="https://openproceedings.org/2020/conf/edbt/paper_238.pdf" class="btn">Full
+                                    text</a>
+                                <a href="https://www.dropbox.com/s/kle6fx57w6ai1uz/8_GalarragaDelaunayDessalles.mp4.mp4?dl=0"
+                                    class="btn">Video</a>
+                                <a href="https://gitlab.inria.fr/lgalarra/remi" class="btn">Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const filters = document.querySelectorAll('.filter-btn');
+            const items = document.querySelectorAll('.publication-item');
+
+            filters.forEach(filter => {
+                filter.addEventListener('click', function () {
+                    const filterType = this.getAttribute('data-filter');
+
+                    // Update active button
+                    filters.forEach(f => f.classList.remove('active'));
+                    this.classList.add('active');
+
+                    // Filter items
+                    items.forEach(item => {
+                        if (filterType === 'all' || item.getAttribute('data-type') === filterType) {
+                            item.style.display = '';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
