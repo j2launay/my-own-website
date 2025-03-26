@@ -1,6 +1,6 @@
 body
 {
-  background-color: #f5f5f5;
+  background-color : SlateGrey;
   text-align: justify;
   text-justify: inter-word;
   font-size: 80%; 
@@ -20,7 +20,7 @@ h3{
 }
 
 a{
-  color: #3498db;
+  color: SlateGrey;
 }
 
 div.container {
@@ -33,35 +33,34 @@ div.container {
 .img-circle{
   box-sizing:border-box;
   float:left;
-  width: 30%;
+  width: 16%;
   border-radius: 50%;
   margin: 1%;
 }
 
 div.containerintro {
   width:100;
-  background: none;
+  background-color: LightGrey;
   display: flex; 
   justify-content: center;
-  margin: 0 2%;
-  padding: 1rem;
+  margin: 0 2% 0;
   text-align: left;
 }
 
 .boxleft {
-  margin: 0 auto;
-  width: 95%;
+  margin-left: 3%;
+  width: 60%;
   display: inline-block;
   vertical-align: top;
-  float: none;
+  float: left;
 }
 
 .boxright {
-  margin: 0 auto;
-  width: 95%;
+  margin-right: 3%;
+  width: 28%;
   display: inline-block;
   vertical-align: top;
-  float: none;
+  float: right;
 }
 
 div.intro {
@@ -75,7 +74,7 @@ div.intro {
 }
 
 div.presentation {
-  background-color: #fff;
+  background-color: LightGrey;
   text-align: justify;
   text-justify: inter-word;
   box-sizing:border-box;
@@ -89,7 +88,7 @@ div.presentation {
 }
 
 div.workexperience{
-  background-color: #fff;
+  background-color: LightGrey;
   box-sizing:border-box;
   float:center;
   text-align: justify;
@@ -102,7 +101,7 @@ div.workexperience{
 }
 
 div.social{
-  background-color: #fff;
+  background-color: LightGrey;
   box-sizing:border-box;
   float:center;
   text-align: justify;
@@ -115,7 +114,7 @@ div.social{
 }
 
 div.publication{
-  background-color: #fff;
+  background-color: LightGrey;
   box-sizing:border-box;
   float:center;
   text-align: justify;
@@ -128,7 +127,7 @@ div.publication{
 }
 
 div.adresse {
-  background-color: #fff;
+  background-color: LightGrey;
   box-sizing:border-box;
   float:center;
   text-align: left;
@@ -142,7 +141,7 @@ div.adresse {
 }
 
 div.education {
-  background-color: #fff;
+  background-color: LightGrey;
   box-sizing:border-box;
   float:center;
   text-align: left;
@@ -155,7 +154,7 @@ div.education {
 }
 
 div.competences {
-  background-color: #fff;
+  background-color: LightGrey;
   box-sizing:border-box;
   float:center;
   text-align: justify;
@@ -168,7 +167,7 @@ div.competences {
 }
 
 div.languages {
-  background-color: #fff;
+  background-color: LightGrey;
   box-sizing:border-box;
   float:center;
   text-align: justify;
@@ -204,36 +203,4 @@ div.description{
   padding-bottom: 10px;
   font-family: Arial, Helvetica;
   font-size: 80%;
-}
-
-.img-article {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  margin-bottom: 1rem;
-}
-
-.main-nav {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  justify-content: center;
-}
-
-.nav-link {
-  padding: 0.5rem 1rem;
-  background: #f5f5f5;
-  border-radius: 4px;
-}
-
-.nav-link.active {
-  background: #3498db;
-  color: white;
-}
-
-.publication-item {
-  flex-direction: column;
-  gap: 1rem;
-  grid-template-columns: 1fr;
-  gap: 1rem;
 }
