@@ -1,3 +1,10 @@
+# System files
 .DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+
 inria_logo.jpg
 inria_logo.png
