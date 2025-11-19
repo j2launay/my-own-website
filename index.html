@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<title>Julien Delaunay's Personal Website</title>
+	<link rel="icon" href="images/me.jpeg" type="image/jpeg">
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
@@ -9,18 +11,18 @@
 	<link rel="stylesheet" media="all and (max-device-width: 480px)" href="css/telephone_resolution.css">
 
 <body>
+	<nav class="main-nav">
+		<a href="index.html" class="nav-link active">Home</a>
+		<a href="#projects" class="nav-link">Projects</a>
+		<a href="#publication" class="nav-link">Publications</a>
+		<a href="#workexperience" class="nav-link">Work Experience</a>
+		<a href="#teaching" class="nav-link">Teaching</a>
+		<a href="#social" class="nav-link">Personal</a>
+	</nav>
 	<div class="containerintro">
 		</br>
 		<img class="img-circle" src="images/me.jpeg" alt="Random Name">	
 		<div class="intro"><h1>Julien DELAUNAY</h1> <h2>PhD researcher in Computer Science </h2> <h3>Top Doctors, Barcelona</h3>
-			<!--<nav class="main-nav">
-				<a href="index.html" class="nav-link active">Home</a>
-				<a href="publications.html" class="nav-link">Publications</a>
-				<a href="#workexperience" class="nav-link">Work Experience</a>
-				<a href="#teaching" class="nav-link">Teaching</a>
-				<a href="#social" class="nav-link">Personal</a>
-			</nav>
-			-->
 		</div>
 		</br>
 	</div>
@@ -71,6 +73,38 @@
 				</br> If you are interested in collaboration, do not hesitate to send an email!</br>
   			</div>			
 			
+			<div id="projects" class="projects">
+				<h1>Projects</h1>
+				<div class="project-item">
+					<h3>TDListener: A Medical AI Scribe</h3>
+					<p>A tool that leverages AI to automatically transcribe and summarize medical consultations, freeing up doctors to focus on their patients.</p>
+					<a href="https://www.tdlistener.ai/" class="btn">Website</a>
+				</div>
+				<div class="project-item">
+					<h3>Global: Shared Data Space for Clinical and Hospitals</h3>
+					<p>A secure and collaborative platform for sharing clinical and hospital data, designed to accelerate research and improve patient care.</p>
+					<a href="https://kted-boost.lovable.app/" class="btn">Website</a>
+				</div>
+				<div class="project-item">
+					<h3>Therapy: Global Explainability of NLP Models</h3>
+					<p>This project introduces a method for generating global explanations for NLP models through a cooperative generation process. It helps in understanding the overall behavior of complex models.</p>
+					<a href="https://github.com/NohTow/therapy" class="btn">Code</a>
+					<a href="https://coria-taln-2023.sciencesconf.org/461410/document" class="btn">Paper</a>
+				</div>
+				<div class="project-item">
+					<h3>APE: When Should We Use Linear Explanations?</h3>
+					<p>This work investigates the suitability of linear explanation models for different machine learning models and data instances, providing guidance on when to use them for interpretability.</p>
+					<a href="https://github.com/j2launay/APE" class="btn">Code</a>
+					<a href="https://dl.acm.org/doi/abs/10.1145/3511808.3557489" class="btn">Paper</a>
+				</div>
+				<div class="project-item">
+					<h3>Improving Anchor-based Explanations</h3>
+					<p>This project focuses on enhancing Anchor-based explanation methods by improving the discretization of tabular data and extending the search space for generating textual explanations.</p>
+					<a href="https://github.com/j2launay/anchors" class="btn">Code</a>
+					<a href="http://luisgalarraga.de/docs/cikm2020.pdf" class="btn">Paper</a>
+				</div>
+			</div>
+
 			<div id="publication" class="publication">
 				<h1>Publication</h1>
 				<!-- Keep only the most recent or most important publications here -->				
@@ -362,6 +396,7 @@
 	<!-- footer -->
 	<footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
 		<p><a href="https://www.linkedin.com/in/julien-delaunay-b64886144/"><i class="fa fa-linkedin"></i>linkedin</a></p>
+		<button id="copy-for-llm">Copy for LLM</button>
   		<p class="w3-medium">
     		Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
  		</p>
@@ -391,5 +426,6 @@
 			});
 		});
 	</script>
+	<script src="website.js"></script>
 </body>
 </html>
