@@ -112,11 +112,113 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+
+    // --- Copy for LLM Button Logic ---
+    const copyBtn = document.getElementById('copy-for-llm');
+    if (copyBtn) {
+        copyBtn.addEventListener('click', () => {
+            const getSectionMarkdown = (selector) => {
+                const element = document.querySelector(selector);
+                if (!element) return '';
+                const elementClone = element.cloneNode(true);
+                const titleElement = elementClone.querySelector('h1');
+                if (titleElement) titleElement.remove();
+                return convertNodeToMarkdown(elementClone).trim();
+            };
+
+            const intro = document.querySelector('.intro');
+            const name = intro.querySelector('h1').textContent.trim();
+            const title = intro.querySelector('h2').textContent.trim();
+            const affiliation = intro.querySelector('h3').textContent.trim();
+
+            const sections = [
+                { title: 'About Me', content: getSectionMarkdown('#about') },
+                { title: 'Latest News', content: getSectionMarkdown('#news') },
+                { title: 'Projects', content: getSectionMarkdown('#projects') },
+                { title: 'Publications', content: getSectionMarkdown('#publications') },
+                { title: 'Work Experience', content: getSectionMarkdown('#workexperience') },
+                { title: 'Teaching', content: getSectionMarkdown('#teaching') },
+                { title: 'Contact Information', content: getSectionMarkdown('.adresse') },
+                { title: 'Education', content: getSectionMarkdown('.education') },
+                { title: 'Technical Skills', content: getSectionMarkdown('.competences') },
+                { title: 'Languages', content: getSectionMarkdown('.languages') },
+            ];
+
+            let markdown = `# ${name}\n## ${title}\n### ${affiliation}\n\n`;
+            sections.forEach(sec => {
+                if (sec.content) {
+                    markdown += `## ${sec.title}\n\n${sec.content}\n\n`;
+                }
+            });
+
+            const finalMarkdown = markdown.replace(/(\s*\n){3,}/g, '\n\n').trim();
+
+            navigator.clipboard.writeText(finalMarkdown).then(() => {
+                copyBtn.textContent = 'Copied!';
+                setTimeout(() => { copyBtn.textContent = 'Copy for LLM'; }, 2000);
+            }).catch(err => {
+                console.error('Failed to copy markdown to clipboard: ', err);
+                copyBtn.textContent = 'Copy failed';
+                setTimeout(() => { copyBtn.textContent = 'Copy for LLM'; }, 2000);
+            });
+        });
+    }
 });
+
+/**
+ * Recursively converts an HTML node and its children to a Markdown string.
+ */
+function convertNodeToMarkdown(node) {
+    if (node.nodeType === Node.TEXT_NODE) {
+        return node.textContent.replace(/\s+/g, ' ');
+    }
+    if (node.nodeType !== Node.ELEMENT_NODE) {
+        return '';
+    }
+
+    const tagName = node.tagName.toLowerCase();
+    let content = '';
+    node.childNodes.forEach(child => {
+        content += convertNodeToMarkdown(child);
+    });
+
+    switch (tagName) {
+        case 'h1': return `# ${content.trim()}\n\n`;
+        case 'h2': return `## ${content.trim()}\n\n`;
+        case 'h3': return `### ${content.trim()}\n\n`;
+        case 'p': return `\n${content.trim()}\n`;
+        case 'div':
+            const trimmedContent = content.trim();
+            return trimmedContent ? `\n${trimmedContent}\n` : '';
+        case 'li':
+            return `* ${content.trim()}\n`;
+        case 'ul':
+        case 'ol':
+            return `${content.trim()}\n\n`;
+        case 'strong':
+        case 'b':
+            return ` **${content.trim()}** `;
+        case 'em':
+        case 'i':
+            return ` *${content.trim()}* `;
+        case 'a':
+            const href = node.getAttribute('href') || '';
+            try {
+                const absoluteHref = new URL(href, document.baseURI).href;
+                return `[${content.trim()}](${absoluteHref})`;
+            } catch(e) {
+                return `[${content.trim()}](${href})`;
+            }
+        case 'br':
+            return '\n';
+        case 'img': return ''; 
+        default:
+            return content;
+    }
+}
 
 async function loadPublications(container) {
     try {
-        // Try local function first
         const response = await fetch('/.netlify/functions/publications');
         if (!response.ok) throw new Error('Function failed');
         
@@ -180,26 +282,20 @@ function renderPapers(container, papers) {
         container.innerHTML = '<p>No recent publications found.</p>';
         return;
     }
-
-    container.innerHTML = ''; // clear loading text
-    
+    container.innerHTML = ''; 
     papers.forEach(paper => {
         const paperDiv = document.createElement('div');
         paperDiv.className = 'auto-pub-item';
-        
         const title = document.createElement('strong');
         title.textContent = paper.title;
-        
         const details = document.createElement('div');
         details.className = 'auto-pub-details';
         const authors = paper.authors ? paper.authors.map(a => a.name).join(', ') : 'Julien Delaunay';
         const venue = paper.venue ? `, ${paper.venue}` : '';
         const year = paper.year ? ` (${paper.year})` : '';
         details.textContent = `${authors}${venue}${year}`;
-        
         paperDiv.appendChild(title);
         paperDiv.appendChild(details);
-        
         if (paper.url) {
             const link = document.createElement('a');
             link.href = paper.url;
@@ -210,7 +306,6 @@ function renderPapers(container, papers) {
             link.style.fontSize = '0.9rem';
             paperDiv.appendChild(link);
         }
-        
         container.appendChild(paperDiv);
     });
 }
