@@ -1,5 +1,6 @@
 <!-- To start the website write python -m SimpleHTTPServer in the terminal if using Python 2 else python -m http.server 
 This is my own website --> 
+python3  -m http.server
 Update for people.irisa.fr through webdav: https://webdav.irisa.fr/people/htdocs/jdelauna
 webdav doc: https://doc-si.inria.fr/display/SU/Ma+page+personnelle#
 Tool to update publications: https://university.wowchemy.com/tutorial/resume/step-3/

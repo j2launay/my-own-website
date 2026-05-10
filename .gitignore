@@ -8,3 +8,7 @@ Thumbs.db
 
 inria_logo.jpg
 inria_logo.png
+
+Academic_CV/*
+# Local Netlify folder
+.netlify
