@@ -7,8 +7,6 @@
     <title>Julien Delaunay - Publications</title>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
     <link rel="stylesheet" href="css/website.css">
-    <link rel="stylesheet" media="screen and (max-width: 1280px)" href="css/petite_resolution.css">
-    <link rel="stylesheet" media="all and (max-device-width: 480px)" href="css/telephone_resolution.css">
     <style>
         .publication-filters {
             margin-bottom: 2rem;
@@ -54,6 +52,10 @@
 </head>
 
 <body>
+	<!-- Theme toggle -->
+	<button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark/light mode">
+		<span class="theme-icon">🌙</span>
+	</button>
     <div class="containerintro">
         <br />
         <img class="img-circle" src="images/me.jpeg" alt="Julien Delaunay">
@@ -364,6 +366,7 @@
             });
         });
     </script>
+    <script src="website.js"></script>
 </body>
 
 </html>

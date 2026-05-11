@@ -67,7 +67,9 @@ document.addEventListener('DOMContentLoaded', () => {
             e.preventDefault();
             const formData = new FormData(contactForm);
             const params = new URLSearchParams(formData);
-            params.append('form-name', 'contact');
+            if (!params.has('form-name')) {
+                params.append('form-name', 'contact');
+            }
 
             // Detect if we are running locally via file:// or localhost
             const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' || window.location.protocol === 'file:';
